@@ -74,7 +74,7 @@ app.get('/api/stock', (req, res) => {
   res.json(products);
 });
 
-// Start server
+// Start server conditionally (testable mode)
 if (process.env.NODE_ENV !== 'test') {
   const PORT = process.env.PORT || 3001;
   app.listen(PORT, () => {
