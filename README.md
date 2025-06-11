@@ -75,6 +75,15 @@ npm install
 npm run dev
 ```
 
+By default the frontend assumes the backend runs on the same host on port `3001`.
+If your backend is hosted elsewhere, create a `.env` file in `frontend/` with:
+
+```
+VITE_BACKEND_URL=http://<backend-ip>:3001/api
+```
+
+Then restart the dev server.
+
 🔐 Authentication
 
 Each user has a role: manufacturer, cfa, or stockist.
