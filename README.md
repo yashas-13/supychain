@@ -61,7 +61,19 @@ npm run dev
 
 4. Backend Setup
 
-Refer to /server/README.md for full backend setup.
+```
+cd backend
+npm install
+npm start
+```
+
+5. Frontend Setup
+
+```
+cd frontend
+npm install
+npm run dev
+```
 
 🔐 Authentication
 
@@ -72,16 +84,16 @@ Token-based login flow with route guards.
 🗃 Directory Structure
 
 .
-├── public/
-│   └── index.html
-├── src/
-│   ├── App.js
-│   ├── components/
-│   ├── screens/
-│   └── api/
+├── frontend/
+│   ├── public/
+│   │   └── index.html
+│   └── src/
+│       ├── App.jsx
+│       ├── components/
+│       ├── screens/
+│       └── api/
 ├── backend/
-│   ├── server.js
-│   └── db/
+│   └── server.js
 
 📄 Role Docs
 
