@@ -1,4 +1,11 @@
-let BASE_URL = 'http://localhost:3001/api';
+let BASE_URL;
+
+if (typeof window !== 'undefined') {
+  const host = window.location.hostname;
+  BASE_URL = `http://${host}:3001/api`;
+} else {
+  BASE_URL = 'http://localhost:3001/api';
+}
 
 export function setBaseUrl(url) {
   BASE_URL = url;

@@ -72,8 +72,13 @@ npm start
 ```
 cd frontend
 npm install
-npm run dev
+npm run dev -- --host
 ```
+
+The frontend automatically points to the backend running on the same host. When
+accessing the app via the backend's IP address, API requests will be sent to
+`http://<backend-ip>:3001`. If you need to override this behaviour, set
+`VITE_BACKEND_URL` in `frontend/.env` and restart the dev server.
 
 🔐 Authentication
 
